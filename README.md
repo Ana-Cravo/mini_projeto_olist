@@ -176,18 +176,22 @@ Pedidos cancelados: 625
 Datas nulas com status cancelado: 619
 Hipótese de negócio não confirmada.
 ```
+## Análise da Hipótese de Negócio
+
+A hipótese avaliada neste projeto foi:
+
+> Pedidos sem data de entrega estão associados a pedidos cancelados.
+
+Os resultados obtidos indicaram que a hipótese não foi confirmada.
+Embora tenham sido identificados pedidos cancelados sem data de entrega, também foram encontrados registros sem data de entrega associados a outros status operacionais. Isso demonstra que a ausência da data de entrega não é um indicador exclusivo de cancelamento do pedido.
 
 ---
 
 ## Reflexão Teórica sobre Machine Learning
 
-A qualidade dos dados é um dos fatores mais importantes para o sucesso de modelos de Machine Learning.
+A qualidade dos dados é um dos fatores mais importantes para o sucesso de modelos de Machine Learning. Os sistemas aprendem a partir dos dados e, para tomar decisões, precisam identificar padrões. Dados inconsistentes, incompletos ou mal formatados podem dificultar a obtenção de conclusões que representem corretamente a realidade. Isso pode introduzir vieses em análises estatísticas e em futuros modelos de Inteligência Artificial.
 
-Dados incompletos, inconsistentes ou incorretamente formatados podem levar algoritmos a aprender padrões inadequados, comprometendo a qualidade das previsões e aumentando o risco de vieses.
-
-A etapa de sanitização realizada neste projeto demonstra a importância do pré-processamento dos dados antes da aplicação de técnicas de Inteligência Artificial. Ao corrigir inconsistências, tratar valores ausentes e padronizar informações, aumenta-se a confiabilidade dos dados utilizados em análises futuras.
-
-Esse processo contribui para a construção de modelos mais robustos, capazes de generalizar melhor para novos cenários e produzir resultados mais confiáveis.
+A etapa de sanitização realizada neste projeto demonstra a importância do pré-processamento dos dados antes da aplicação de técnicas de Inteligência Artificial. Ao corrigir inconsistências, tratar valores ausentes e padronizar informações, aumenta-se a confiabilidade dos dados utilizados em análises futuras. Dessa forma, reduz-se o risco de interpretações equivocadas e melhora-se a qualidade das informações que poderão ser utilizadas por algoritmos de aprendizado de máquina.
 
 ---
 
